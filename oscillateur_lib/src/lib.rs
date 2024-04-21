@@ -19,17 +19,17 @@ impl Oscillateur {
     }
 
     pub fn generate_and_get_next_sample(&mut self) -> f64 {
-        if self.current_sample >= self.buffer.len() {
-            self.current_sample = 0; // Réinitialiser si nous atteignons la fin du buffer
-        }
-
         let t = (self.current_sample as f64 / self.sample_rate) + self.phase;
         let sample = (2.0 * std::f64::consts::PI * self.frequency * t).sin();
 
-        // Mettre à jour le buffer avec le nouvel échantillon
-        self.buffer[self.current_sample] = sample;
-        self.current_sample += 1;
+        // Incrémentation du compteur d'échantillons
+        self.current_sample = (self.current_sample + 1) % self.sample_rate.round() as usize;
 
         sample
     }
+
+    pub fn print_samples(&self) {
+        println!("[{}]", self.buffer.iter().map(|&x| x.to_string()).collect::<Vec<_>>().join(", "));
+    }
+
 }

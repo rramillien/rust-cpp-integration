@@ -7,4 +7,7 @@ edition = "2021"
 
 [dependencies]
 oscillateur_lib = { path = "../oscillateur_lib" }
-
+cpal = "0.15.3"
+anyhow = "1.0.82"
+dasp = { version = "0.11", features = ["signal"] }
+crossbeam = "0.8.4"
