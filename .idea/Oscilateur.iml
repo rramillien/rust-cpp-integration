@@ -8,12 +8,16 @@
       <sourceFolder url="file://$MODULE_DIR$/Oscilator_Mod_sin/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oscilator_Mod_square/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oscilator_Mod_saw/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/filtre_PasseHaut_Mod/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/filtre_PasseBas_mod/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/oscillateur_lib/target" />
       <excludeFolder url="file://$MODULE_DIR$/projet_test/target" />
       <excludeFolder url="file://$MODULE_DIR$/oscillator_module/target" />
       <excludeFolder url="file://$MODULE_DIR$/Oscilator_Mod_sin/target" />
       <excludeFolder url="file://$MODULE_DIR$/Oscilator_Mod_square/target" />
       <excludeFolder url="file://$MODULE_DIR$/Oscilator_Mod_saw/target" />
+      <excludeFolder url="file://$MODULE_DIR$/filtre_PasseHaut_Mod/target" />
+      <excludeFolder url="file://$MODULE_DIR$/filtre_PasseBas_mod/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

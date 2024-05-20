@@ -14,3 +14,5 @@ oscillator_module = { path = "../oscillator_module" }
 Oscilator_Mod_sin = { path = "../Oscilator_Mod_sin" }
 Oscilator_Mod_square = {path = "../Oscilator_Mod_square"}
 Oscilator_Mod_saw = {path = "../Oscilator_Mod_saw"}
+filtre_PasseHaut_Mod = {path = "../filtre_PasseHaut_Mod"}
+filtre_PasseBas_Mod = {path = "../filtre_PasseBas_mod"}

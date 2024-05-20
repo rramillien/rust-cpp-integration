@@ -1,0 +1,68 @@
+use filtre_PasseHaut_Mod::HighPassFilter;
+
+fn main() {
+    // Paramètres du filtre
+    let sample_rate = 44100.0; // Taux d'échantillonnage en Hz
+    let cutoff = 1000.0;       // Fréquence de coupure en Hz
+    let resonance = 0.5;       // Résonance
+
+    // Créer une instance du filtre passe-haut
+    let mut filter = HighPassFilter::new(sample_rate, cutoff, resonance);
+
+    // Signal d'entrée : un tableau simple pour tester
+    let input_samples = vec![0.0, 1.0, 0.0, -1.0, 0.0, 1.0, 0.0, -1.0, 0.0]; // Exemple simpliste
+    let mut output_samples = vec![0.0; input_samples.len()];
+
+    // Appliquer le filtre passe-haut
+    filter.apply_filter(&input_samples, &mut output_samples);
+
+    // Imprimer les échantillons de sortie
+    println!("Input samples:  {:?}", input_samples);
+    println!("Output samples: {:?}", output_samples);
+}
+
+
+use filtre_PasseHaut_Mod::HighPassFilter;
+
+fn main() {
+    // Paramètres du filtre
+    let sample_rate = 44100.0; // Taux d'échantillonnage en Hz
+    let cutoff = 1000.0;       // Fréquence de coupure en Hz
+    let resonance = 0.5;       // Résonance
+
+    // Créer une instance du filtre passe-haut
+    let mut filter = HighPassFilter::new(sample_rate, cutoff, resonance);
+
+    // Signal d'entrée : un tableau simple pour tester
+    let input_samples = vec![0.0, 1.0, 0.0, -1.0, 0.0, 1.0, 0.0, -1.0, 0.0]; // Exemple simpliste
+    let mut output_samples = vec![0.0; input_samples.len()];
+
+    // Appliquer le filtre passe-haut
+    filter.apply_filter(&input_samples, &mut output_samples);
+
+    // Imprimer les échantillons de sortie
+    println!("Input samples:  {:?}", input_samples);
+    println!("Output samples: {:?}", output_samples);
+}
+
+
+
+
+use filtre_PasseHaut_mod::HighPassFilter;
+
+fn main() {
+    // Création d'un tableau d'entrée avec des valeurs d'exemple
+    let input_samples: Vec<f64> = vec![/* valeurs de votre oscillateur ou autres valeurs de test */];
+    let mut output_samples: Vec<f64> = vec![0.0; input_samples.len()];
+
+    // Création de l'instance du filtre
+    let mut filter = HighPassFilter::new(44100.0, 220.0, 0.707);
+
+    // Application du filtre
+    filter.apply_filter(&input_samples, &mut output_samples);
+
+    // Affichage des échantillons filtrés
+    println!("Filtered samples: {:?}", output_samples);
+}
+
+
