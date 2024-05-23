@@ -19,8 +19,8 @@ impl OscillateurSaw {
     }
 
     pub fn generate_and_get_next_sample(&mut self) -> f64 {
-        let t = (self.current_sample as f64 / self.sample_rate) + self.phase;
-        let sample = (2.0 * std::f64::consts::PI * self.frequency * t).sin();
+        let t = self.current_sample as f64 / self.sample_rate;
+        let sample = 2.0 * (t * self.frequency + self.phase).fract() - 1.0;
 
         // Stockage de l'échantillon dans le buffer pour un éventuel affichage
         self.buffer[self.current_sample] = sample;
@@ -30,7 +30,6 @@ impl OscillateurSaw {
 
         sample
     }
-
 
     pub fn print_samples(&self) {
         println!("[{}]", self.buffer.iter().map(|&x| x.to_string()).collect::<Vec<_>>().join(", "));
