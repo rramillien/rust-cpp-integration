@@ -1,10 +1,10 @@
 
 pub struct OscillateurSin {
-    frequency: f64,        // Fréquence en Hz
-    phase: f64,            // Phase initiale de l'onde en radians
-    sample_rate: f64,      // Nombre d'échantillons par seconde en Hz
-    current_sample: usize, // Compteur pour l'échantillon actuel
-    buffer: Vec<f64>,      // Buffer pour stocker les échantillons précalculés
+    pub frequency: f64,        // Fréquence en Hz
+    pub phase: f64,            // Phase initiale de l'onde en radians
+    pub sample_rate: f64,      // Nombre d'échantillons par seconde en Hz
+    pub current_sample: usize, // Compteur pour l'échantillon actuel
+    pub buffer: Vec<f64>,      // Buffer pour stocker les échantillons précalculés
 }
 
 impl OscillateurSin {

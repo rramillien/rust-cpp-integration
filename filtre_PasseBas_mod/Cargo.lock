@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "filtre_passe_bas_mod"
+name = "filtre_PasseBas_mod"
 version = "0.1.0"

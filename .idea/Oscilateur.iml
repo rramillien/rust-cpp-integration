@@ -9,7 +9,13 @@
       <sourceFolder url="file://$MODULE_DIR$/Oscilator_Mod_square/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oscilator_Mod_saw/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/filtre_PasseHaut_Mod/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Oscilator_Mod_saw/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Oscilator_Mod_sin/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Oscilator_Mod_square/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/filtre_PasseBas_mod/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/filtre_PasseBas_mod/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/filtre_PasseHaut_Mod/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/oscillator_module/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/oscillateur_lib/target" />
       <excludeFolder url="file://$MODULE_DIR$/projet_test/target" />
       <excludeFolder url="file://$MODULE_DIR$/oscillator_module/target" />
